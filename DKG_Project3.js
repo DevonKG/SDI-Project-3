@@ -4,7 +4,7 @@
 // SDI Project 3
 // 05/2013
 
-
+var Oddler = "Oddler "
 var Leader = {
     Name: "Oddler",
     Class: "Warrior",
@@ -53,44 +53,16 @@ var Team = [ {
     }
     ];
 //^^ Team Done
+// Stats in Leader and Teams = "Getter" as it is getting info from my json... I think I got that right.
+// var Leader and Team are Global vars
+console.log(Oddler + "must assemble a team.")
 console.log(Leader);
 console.log(Team);
-//Boolean
-var Oddler = "Oddler "
-var Group = 3;
-var MaxGr = 0;
-var Tof3 = true;
-
-console.log(Oddler + "must assemble a team.")
-console.log("The must consist of 3 people at a time, inlcuding " + Oddler)
+console.log("The team must consist of 3 people at a time, inlcuding " + Oddler)
 console.log("This means the team is " + Oddler + "plus 2 other people")
-console.log(Oddler + "must always be in the group, and is allowed to freely trade between other team members as he see fits");
-
-if (Tof3 === true) {
-    if (Group == 2) {
-    console.log(Oddler + "has chosen his team, and is ready to disimbark")
-    } else {
-    console.log(Oddler + "has not chosen his team yet. He is not ready to go yet")
-    }
-
-    TeamReady = function(NumSpots, ReqSpots)
-    {
-        return(NumSpots == ReqSpots);
-    }
-    
-    if (Tof3 === true) {
-        if (TeamReady ()) {
-         console.log(Oddler + "has chosen his team, and is ready to disembark")
-    } else {
-         console.log(Oddler + "has not chosen his team yet. He is not ready to go yet")
-    }
-        }
-};
-//Boolean done
-Team.pop()
-console.log(Oddler + "current team is now")
-console.log(Team)
-console.log("On the way out of town " + Oddler + "Decides he should get supplies for him as his team")
+console.log(Oddler + "must always be in the group, and is allowed to freely trade between other team members as he sees fits");
+console.log(Oddler + " currently has 4 people on his team, this means before leaving town, he must leave on behind")
+console.log("Before leaving town " + Oddler + "decides he should get supplies for him and his team")
 //Number/Math Box
 var Gold = 5000;
 var HealthPotion = 150;
@@ -103,7 +75,13 @@ var QualityTent = 1000;
     var NumResPots = 0;
     var NumCTents = 0;
     var NumQTents = 0;
-
+//
+   // var Wallet = function(FoundGold) { //Method Mutator, to be later used
+    //Gold = Gold + FoundGold;
+    //return Wallet
+    //}
+// 
+     console.log("Starting gold " + Gold)
      while (Gold >= HealthPotion && NumHpotions < 10) {
         //console.log(Oddler + "bought 1 Health Potion")
         NumHpotions++;
@@ -136,5 +114,41 @@ var QualityTent = 1000;
     };
     console.log(Oddler + "bought " + NumCTents + "cheap tent")
     console.log(Oddler + "has " + Gold + " gold left over")
-// Nunber/Math Block done ^^
+// Nunber/Math Block done ^^    
+var Group = 3;
+var MaxGr = 0;
+var Tof3 = true;
+//Boolean
+if (Tof3 === true) {
+    if (Group == 2) {
+    console.log(Oddler + "has chosen his team, and is ready to disimbark")
+    } else {
+    console.log(Oddler + "has not chosen his team yet. He is not ready to go yet")
+    }
 
+    TeamReady = function(NumSpots, ReqSpots)
+    {
+        return(NumSpots == ReqSpots); //<<< Boolean return
+    }
+    console.log(Oddler + "decides to let Kataveen go out on her own, and will meet at the next town in 3 days at the inn")
+    //console.log("as Kataveen leaves, she pick pockets a gaurd")
+       // for (var i = 0 ; i <= Wallet ; i ++) {
+            //Gold = Gold + Wallet(Gold[i])
+       // }
+           // console.log(Wallet + " gold was added to the wallet")
+    
+    if (Tof3 === true) {
+        if (TeamReady ()) {
+         console.log(Oddler + "has chosen his team, and is ready to disembark")
+    } else {
+         console.log(Oddler + "has not chosen his team yet. He is not ready to go yet")
+    }
+        }
+};
+//Boolean done
+
+Team.pop()
+console.log(Oddler + "current team is now")
+console.log(Leader)
+console.log(Team)
+console.log("With is faithful team behind him " + Oddler + "leaves town to create his own adventure")

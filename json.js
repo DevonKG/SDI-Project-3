@@ -1,4 +1,4 @@
-    json = {
+var json = {
     "Stats" : [
     { //Oddler
     Life: "215",
