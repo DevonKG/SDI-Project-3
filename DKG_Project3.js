@@ -76,10 +76,10 @@ var QualityTent = 1000;
     var NumCTents = 0;
     var NumQTents = 0;
 //
-   // var Wallet = function(FoundGold) { //Method Mutator, to be later used
-    //Gold = Gold + FoundGold;
-    //return Wallet
-    //}
+    var Wallet = function(FoundGold) { //Method Mutator, to be later used
+    Gold = Gold + FoundGold;
+    return Wallet
+    }
 // 
      console.log("Starting gold " + Gold)
      while (Gold >= HealthPotion && NumHpotions < 10) {
