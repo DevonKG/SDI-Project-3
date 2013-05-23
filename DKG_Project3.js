@@ -4,17 +4,11 @@
 // SDI Project 3
 // 05/2013
 
-var LeaderStats = {
-    Life: "215",
-    Magic: "175",
-    Strength: "250",
-    Defense: "155",
-    };
+
 var Leader = {
     Name: "Oddler",
     Class: "Warrior",
-    Title: "The Greater Devil",
-    Stats: LeaderStats,
+    Title: json.Stats[0],
     Spells: [
         "Egress",
         "Lazer Eye",
@@ -23,30 +17,11 @@ var Leader = {
     ],
     Age: 137
 };
-// Oddler Finished
-var TeamSts = [ { //Hartho
-    Life: "250",
-    Magic: "65",
-    Strength: "165",
-    Defense: "300"
-},
-    { //Mazy
-    Life: "150",
-    Magic: "285",
-    Strength: "75",
-    Defense: "175"
-    },
-    { //KataVeen
-        Life: "200",
-        Magic: "60",
-        Strength: "125",
-        Defense: "150"
-    } ];
-
+//Space
 var Team = [ { 
     Name: "Hartho",
     Class: "Defender",
-    Stats: TeamSts[0],
+    Stats: json.Stats[1],
     Spells: [
      "Defence",
      "Defence+"
@@ -56,7 +31,7 @@ var Team = [ {
     {
     Name: "Mazy",
     Class: "Healer",
-    Stats: TeamSts[1],
+    Stats: json.Stats[2],
     Spells: [
         "Single Heal",
         "Team Heal",
@@ -68,7 +43,7 @@ var Team = [ {
     {
       Name: "Kataveen",
       Class: "Theif",
-      Stats: TeamSts[2],
+      Stats: json.Stats[3],
       Spells: [
         "Steal Gold",
         "Steal Life",
@@ -77,7 +52,7 @@ var Team = [ {
     Age: 28,
     }
     ];
-//^^Done
+//^^ Team Done
 console.log(Leader);
 console.log(Team);
 //Boolean
@@ -128,7 +103,7 @@ var QualityTent = 1000;
     var NumResPots = 0;
     var NumCTents = 0;
     var NumQTents = 0;
-   
+
      while (Gold >= HealthPotion && NumHpotions < 10) {
         //console.log(Oddler + "bought 1 Health Potion")
         NumHpotions++;
@@ -162,3 +137,4 @@ var QualityTent = 1000;
     console.log(Oddler + "bought " + NumCTents + "cheap tent")
     console.log(Oddler + "has " + Gold + " gold left over")
 // Nunber/Math Block done ^^
+
