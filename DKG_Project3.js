@@ -111,7 +111,54 @@ if (Tof3 === true) {
     }
         }
 };
-
-
-
-
+//Boolean done
+Team.pop()
+console.log(Oddler + "current team is now")
+console.log(Team)
+console.log("On the way out of town " + Oddler + "Decides he should get supplies for him as his team")
+//Number/Math Box
+var Gold = 5000;
+var HealthPotion = 150;
+var MagicPotion = 200;
+var RestorePotion = 500;
+var CheapTent = 500;
+var QualityTent = 1000;
+    var NumHpotions = 0;
+    var NumMPotions = 0;
+    var NumResPots = 0;
+    var NumCTents = 0;
+    var NumQTents = 0;
+   
+     while (Gold >= HealthPotion && NumHpotions < 10) {
+        //console.log(Oddler + "bought 1 Health Potion")
+        NumHpotions++;
+        Gold = Gold - HealthPotion
+        };
+    
+    console.log(Oddler + " bought " + NumHpotions + " health potions")
+    console.log(Oddler + "has " + Gold + " gold left over")
+    
+    while (Gold >= MagicPotion && NumMPotions < 6) {
+        //console.log(Oddler + "bought 1 Magic Potion")
+        NumMPotions++;
+        Gold = Gold - MagicPotion
+    };
+    console.log(Oddler + " bought " + NumMPotions + " magic potions")
+    console.log(Oddler + "has " + Gold + " gold left over")
+    
+    while (Gold >= RestorePotion && NumResPots < 3) {
+        //console.log(Oddler + " Bought 1 Restore Potion")
+        NumResPots++;
+        Gold = Gold - RestorePotion
+    };
+    console.log(Oddler + "bought " + NumResPots + " restoration potions")
+    console.log(Oddler + "has " + Gold + " gold left over")
+    
+    while (Gold >= CheapTent && NumCTents < 1) {
+        //console.log(Oddler + " bought 1 cheap tent")
+        NumCTents++;
+        Gold = Gold - CheapTent
+    };
+    console.log(Oddler + "bought " + NumCTents + "cheap tent")
+    console.log(Oddler + "has " + Gold + " gold left over")
+// Nunber/Math Block done ^^
